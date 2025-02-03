@@ -1,0 +1,90 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.grid {
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+
+
+.text-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #6c5ce7, #a855f7);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 加载动画样式 */
+#loading-overlay {
+    backdrop-filter: blur(8px);
+}
+.loader {
+    border-top-color: #a855f7;
+    border-left-color: #a855f7;
+    animation: spin 1s linear infinite;
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.join-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.join-section p {
+    margin: 1rem 0;
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Microsoft+YaHei:wght@400;600&display=swap'); 
+
+/* 合并body样式并优化布局 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* 防止横向滚动 */
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg, #f6d365, #a855f7, #65d2f6);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
